@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planes Premium - Enlazados</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f7f9;
+      color: #333;
+    }
+    header {
+      background: #0d6efd;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .plan-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .plan-card:hover {
+      transform: translateY(-5px);
+    }
+    .plan-card h2 {
+      margin-top: 0;
+      color: #0d6efd;
+      font-size: 1.5rem;
+    }
+    .plan-card ul {
+      list-style: none;
+      padding: 0;
+    }
+    .plan-card ul li {
+      margin: 0.75rem 0;
+      padding-left: 1.2rem;
+      position: relative;
+    }
+    .plan-card ul li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #0d6efd;
+    }
+    .plan-card .price {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 1rem 0;
+      color: #0d6efd;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Planes Premium - Enlazados</h1>
+    <p>Descubre los beneficios exclusivos para Profesionales y Empresas</p>
+  </header>
+
+  <div class="container">
+    <!-- Plan Profesional -->
+    <div class="plan-card">
+      <h2>Profesional</h2>
+      <p class="price">$/mes</p>
+      <ul>
+        <li>Publicación de perfil completo</li>
+        <li>Chat privado con empresas</li>
+        <li>Alertas de disponibilidad</li>
+        <li>Acceso a panel general de publicaciones</li>
+      </ul>
+    </div>
+
+    <!-- Plan Empresarial -->
+    <div class="plan-card">
+      <h2>Empresarial</h2>
+      <p class="price">$/mes</p>
+      <ul>
+        <li>Publicar vacantes y proyectos</li>
+        <li>Acceso a perfiles verificados de profesionales</li>
+        <li>Chat privado con candidatos</li>
+        <li>Panel de gestión y estadísticas de postulaciones</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    Contenido informativo. Muy Pronto estarán disponibles.
+  </footer>
+
+</body>
+</html>
