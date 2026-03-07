@@ -1,118 +1,164 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Planes Premium - Enlazados</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f7f9;
-      color: #333;
-    }
-    header {
-      background: #0d6efd;
-      color: #fff;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-    header p {
-      margin: 0.5rem 0 0;
-    }
-    .container {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.5rem;
-    }
-    .plan-card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 1.5rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-    .plan-card:hover {
-      transform: translateY(-5px);
-    }
-    .plan-card h2 {
-      margin-top: 0;
-      color: #0d6efd;
-      font-size: 1.5rem;
-    }
-    .plan-card ul {
-      list-style: none;
-      padding: 0;
-    }
-    .plan-card ul li {
-      margin: 0.75rem 0;
-      padding-left: 1.2rem;
-      position: relative;
-    }
-    .plan-card ul li::before {
-      content: "✔";
-      position: absolute;
-      left: 0;
-      color: #0d6efd;
-    }
-    .plan-card .price {
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin: 1rem 0;
-      color: #0d6efd;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #666;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Safe Game - Enlazados</title>
+
+<style>
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+background:#1a1a1a;
+margin:0;
+padding:0;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.card{
+background:#000;
+padding:25px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,0.4);
+max-width:420px;
+text-align:center;
+color:white;
+}
+
+.card img{
+width:100%;
+border-radius:12px;
+margin-bottom:15px;
+}
+
+h2{
+margin:10px 0;
+color:white;
+}
+
+p{
+color:#cccccc;
+font-size:14px;
+}
+
+.botones{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+justify-content:center;
+margin-top:20px;
+}
+
+.btn{
+background:#4CAF50;
+color:white;
+padding:12px 18px;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#2e7d32;
+transform:scale(1.05);
+box-shadow:0 0 10px #4CAF50;
+}
+
+.pago{
+margin-top:30px;
+padding-top:20px;
+border-top:1px solid #333;
+}
+
+.btn-pago{
+background:#009ee3;
+color:white;
+padding:12px 20px;
+border-radius:10px;
+text-decoration:none;
+font-weight:bold;
+display:inline-block;
+margin-top:10px;
+}
+
+.btn-pago:hover{
+background:#007eb5;
+transform:scale(1.05);
+}
+
+.footer{
+margin-top:20px;
+font-size:12px;
+color:#888;
+}
+
+</style>
 </head>
+
+
 <body>
 
-  <header>
-    <h1>Planes Premium - Enlazados</h1>
-    <p>Descubre los beneficios exclusivos para Profesionales y Empresas</p>
-  </header>
+<div class="card">
 
-  <div class="container">
-    <!-- Plan Profesional -->
-    <div class="plan-card">
-      <h2>Profesional</h2>
-      <p class="price">$/mes</p>
-      <ul>
-        <li>Publicación de perfil completo</li>
-        <li>Chat privado con empresas</li>
-        <li>Alertas de disponibilidad</li>
-        <li>Acceso a panel general de publicaciones</li>
-      </ul>
-    </div>
+<img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?auto=format&fit=crop&q=80&w=870" alt="Juegos interactivos">
 
-    <!-- Plan Empresarial -->
-    <div class="plan-card">
-      <h2>Empresarial</h2>
-      <p class="price">$/mes</p>
-      <ul>
-        <li>Publicar vacantes y proyectos</li>
-        <li>Acceso a perfiles verificados de profesionales</li>
-        <li>Chat privado con candidatos</li>
-        <li>Panel de gestión y estadísticas de postulaciones</li>
-      </ul>
-    </div>
-  </div>
+<h2>🎮 Safe Game</h2>
 
-  <footer>
-    Contenido informativo. Muy Pronto estarán disponibles.
-  </footer>
+<p>
+Explora nuestros juegos interactivos.<br>
+Si disfrutas la experiencia puedes apoyar el proyecto para que sigamos creando nuevas aventuras.
+</p>
+
+
+<div class="botones">
+
+<a class="btn" href="https://lunna23483.github.io/Lluvia/" target="_blank">
+🌧 Juego Lluvia
+</a>
+
+<a class="btn" href="https://lunna23483.github.io/juegoat/" target="_blank">
+⚡ Juego AT
+</a>
+
+<a class="btn" href="https://gdesarrollo.netlify.app/" target="_blank">
+🧠 Juego Desarrollo
+</a>
+
+<a class="btn" href="https://inspectorx.netlify.app" target="_blank">
+🕵️ Inspector X
+</a>
+
+</div>
+
+
+<div class="pago">
+
+<h3>💜 Apoya el proyecto</h3>
+
+<p>
+Safe Game y Enlazados crecen gracias al apoyo de la comunidad.<br>
+Puedes hacer un aporte voluntario para ayudarnos a seguir desarrollando nuevos juegos.
+</p>
+
+<a class="btn-pago" href="https://link.mercadopago.com.co/enlazadosapp" target="_blank">
+💳 Aportar al proyecto
+</a>
+
+</div>
+
+
+<div class="footer">
+Proyecto Safe Game • Enlazados
+</div>
+
+</div>
 
 </body>
+
 </html>
