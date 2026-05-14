@@ -79,6 +79,35 @@ transform:scale(1.05);
 box-shadow:0 0 10px #4CAF50;
 }
 
+/* BOTON DESTACADO EXTINTORES */
+.btn-extintor{
+animation:pulseGlow 1.8s infinite;
+background:linear-gradient(45deg,#ff5722,#ff9800);
+box-shadow:0 0 12px rgba(255,87,34,0.7);
+position:relative;
+overflow:hidden;
+}
+
+.btn-extintor:hover{
+transform:scale(1.1);
+box-shadow:0 0 25px #ff5722;
+}
+
+@keyframes pulseGlow{
+0%{
+transform:scale(1);
+box-shadow:0 0 8px rgba(255,87,34,0.5);
+}
+50%{
+transform:scale(1.06);
+box-shadow:0 0 22px rgba(255,87,34,1);
+}
+100%{
+transform:scale(1);
+box-shadow:0 0 8px rgba(255,87,34,0.5);
+}
+}
+
 .pago{
 margin-top:30px;
 padding-top:20px;
@@ -142,15 +171,19 @@ Si disfrutas la experiencia puedes apoyar el proyecto para que sigamos creando n
 <a class="btn" href="https://inspectorx.netlify.app" target="_blank">
 🕵️ Inspector X
 </a>
-<a class="btn" href="https://lunna23483.github.io/Juego-de-Extintor/" target="_blank">
+
+<a class="btn btn-extintor" href="https://lunna23483.github.io/Juego-de-Extintor/" target="_blank">
 🧯 Extintores
 </a>  
+
 <a class="btn" href="https://www.sura.co/arl/educacion/juegos-sst" target="_blank">
 🎮 Juegos ARL Sura
-  </a>
-  <a class="btn" href="https://gameprueba.netlify.app/" target="_blank">
-    🏢 Acceso a empresas
 </a>
+
+<a class="btn" href="https://gameprueba.netlify.app/" target="_blank">
+🏢 Acceso a empresas
+</a>
+
 </div>
 
 
@@ -180,6 +213,3 @@ Proyecto Safe Game • Enlazados
 </body>
 
 </html>
-
-
-
